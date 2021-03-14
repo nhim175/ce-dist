@@ -1,0 +1,23 @@
+#font-picker {
+    width: 100%;
+}
+
+#font-picker > button {
+    display: none;
+}
+
+#font-picker .font-list {
+    position: relative;
+    max-height: fit-content;
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+}
+
+#font-picker .font-list li {
+    margin: 5px;
+}
+
+
+/*# sourceMappingURL=/font-picker.2b686dd8.css.map */

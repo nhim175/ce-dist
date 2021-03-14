@@ -1,0 +1,82 @@
+.tools {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools .tool {
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #222222;
+  transition: 0.2s all ease;
+  position: relative;
+}
+
+.tools .tool > img {
+  transition: 0.2s all ease;
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.tools .tool:hover {
+  background-color: #f3f3f3;
+}
+
+.tools .tool:hover > img {
+  transform: scale(1.25);
+}
+
+.tools .tool span {
+  font-size: 12px;
+}
+
+.tools .tool .sub-tool {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background: #ffffff;
+  z-index: 1;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.15);
+  left: 0;
+  transition: 0.2s all ease;
+}
+
+.tools .tool .sub-tool.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tools .tool .sub-tool button {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+  transition: 0.2s all ease;
+  border-bottom: 1px solid #eeeeee;
+  white-space: pre;
+}
+
+.tools .tool .sub-tool button:hover {
+  background-color: #f3f3f3;
+}
+
+.tools .tool .sub-tool button img {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .tools .tool > span {
+    display: none;
+  }
+}
+
+
+/*# sourceMappingURL=/tools.fe1b0bf5.css.map */
